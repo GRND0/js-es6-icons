@@ -120,15 +120,15 @@ icone.forEach(icone => {
 	contenitoreIcone.innerHTML = `<i class="${icone.family}${" "}${icone.prefix}${icone.name}"></i>`;
 	contenitore.append(contenitoreIcone);
 	if (icone.color === "orange") {
-		const icone = document.getElementsByTagName("i") ;
-		icone.classList.add("arancione")
+		const iconeInterne = document.getElementsByTagName("i") ;
+		iconeInterne.classList.add("arancione")
 	}  else if  (icone.color === "blue") {
-		const icone = document.getElementsByTagName("i") ;
-		icone.classList.add("blu")
+		const iconeInterne = document.getElementsByTagName("i") ;
+		iconeInterne.classList.add("blu")
 		
 	} else {
-		const icone = document.getElementsByTagName("i") ;
-		icone.classList.add("verde")
+		const iconeInterne = document.getElementsByTagName("i") ;
+		iconeInterne.classList.add("verde")
 	}
 
 
