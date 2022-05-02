@@ -115,9 +115,21 @@ const icone = [
 
 icone.forEach(icone => {
 	const contenitore = document.getElementById ("contenitore") ;
-	const contenitoreIcone = document.createElement("contenitore-icona");
-	contenitoreIcone.innerHTML = `<i class="${icone.family}${icone.prefix}${icone.name}"></i>`;
+	const contenitoreIcone = document.createElement("div");
+	contenitoreIcone.classList.add("icone") ;
+	contenitoreIcone.innerHTML = `<i class="${icone.family}${" "}${icone.prefix}${icone.name}"></i>`;
 	contenitore.append(contenitoreIcone);
+	if (icone.color === "orange") {
+		const icone = document.getElementsByTagName("i") ;
+		icone.classList.add("arancione")
+	}  else if  (icone.color === "blue") {
+		const icone = document.getElementsByTagName("i") ;
+		icone.classList.add("blu")
+		
+	} else {
+		const icone = document.getElementsByTagName("i") ;
+		icone.classList.add("verde")
+	}
 
 
 } )

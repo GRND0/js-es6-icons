@@ -2,4 +2,24 @@
     width: 80% ;
     margin: 0 auto ;
     background-color: darkgray ;
+    display: flex ;
+    flex-wrap: wrap ;
+}
+
+.icone {
+    width: 100px ;
+    height: 40px ;
+    background-color: blanchedalmond ;
+
+
+}
+
+.arancione {
+    color: orange ;
+}
+.blu {
+    color: blue ;
+}
+.verde {
+    color: greenyellow ;
 }
