@@ -113,16 +113,17 @@ const icone = [
 	}
 ];
 
-icone.forEach(icone => {
+icone.forEach((icona, index) => {
 	const contenitore = document.getElementById ("contenitore") ;
 	const contenitoreIcone = document.createElement("div");
 	contenitoreIcone.classList.add("icone") ;
-	contenitoreIcone.innerHTML = `<i class="${icone.family}${" "}${icone.prefix}${icone.name}"></i>`;
+	contenitoreIcone.innerHTML = `<i class="${icona.family} ${icona.prefix}${icona.name} ${icona.color}"></i>`;
 	contenitore.append(contenitoreIcone);
-	if (icone.color === "orange") {
-		const iconeInterne = document.getElementsByTagName("i") ;
+	/*
+	if (icona.color === "orange") {
+		const iconeInterne = document.getElementsByTagName("i")[index];
 		iconeInterne.classList.add("arancione")
-	}  else if  (icone.color === "blue") {
+	}  else if  (icona.color === "blue") {
 		const iconeInterne = document.getElementsByTagName("i") ;
 		iconeInterne.classList.add("blu")
 		
@@ -130,6 +131,5 @@ icone.forEach(icone => {
 		const iconeInterne = document.getElementsByTagName("i") ;
 		iconeInterne.classList.add("verde")
 	}
-
-
+	*/
 } )
